@@ -1,0 +1,129 @@
+html {
+  font-size: 14px;
+  font-family: 'Oxygen', sans-serif;
+  background-color: rgb(249, 249, 249);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: rgba(240, 229, 229, 0.9);
+  color:black;
+}
+
+.logo {
+  padding-right: 1.28rem;
+  height: 75px;
+}
+
+h1 {
+  flex: 1;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.43rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+/* elementet e formes */
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.86rem 20%;
+}
+
+input,
+textarea,
+select {
+  padding: .71rem;
+  margin-right: 1.21rem;
+  background-color: whitesmoke;
+  border: solid 1px rgb(151, 151, 151);
+}
+
+textarea {
+  height: 5.2rem;
+}
+
+label {
+  margin-bottom: .71rem;
+  font-weight: bold;
+}
+
+legend {
+  margin-bottom: .71rem;;
+  font-weight: bold;
+}
+
+.invalid {
+  border: 1px solid rgb(224, 18, 43);
+}
+
+.rreshtat {
+  display: flex;
+  margin-bottom: 2.14rem;
+}
+
+.rreshtat.vertical {
+  flex-direction: column;
+}
+
+.rreshtat > * {
+  flex: 1;
+}
+
+.forma {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox > * {
+  margin-bottom: .71rem;
+}
+
+.checkbox input {
+  font-size: 1.29rem;
+}
+
+.checkbox label {
+  font-weight: normal;
+}
+
+.marreveshje.form-row {
+  margin-bottom: 0;
+}
+
+.marreveshje fieldset > * {
+  margin-bottom: .71rem;
+}
+
+.signature {
+  font-family: 'Petit Formal Script', cursive;
+}
+
+button {
+  cursor: pointer;
+  padding: .85rem 2.29rem;
+  border-radius: 4px;
+  margin-right: 1.36rem;
+  background-color: rgb(76, 126, 243);
+  font-size: 1.14rem;
+  color: white;
+  transition: .25s;
+}
+
+button:hover {
+  background-color: rgb(30, 104, 241);
+}
+
+button.reset {
+  background-color: rgb(232, 91, 73);
+}
+
+button.reset:hover {
+  background-color:rgb(224, 18, 43);
+}

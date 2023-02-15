@@ -1,0 +1,356 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+header{
+	width: 100%;
+}
+
+.rresht-dhe-hapsire{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.permbajtje-nav{
+	display: inline-flex;
+	height: 75px;
+	border-bottom: 1px solid rgba(101, 166, 223, 0.35);
+	justify-content: space-around;
+	background-color: rgba(240, 229, 229, 0.9);
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+}
+
+.logo{
+	height: 90%;
+	border-radius: 80%;
+}
+
+.undecorated-ul{
+	list-style: none;
+}
+
+ul li{
+	display: inline-flex;
+	align-items: center;
+}
+
+.element-nav{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav-items-display{
+	display: inline-flex;
+	margin: 30px;
+}
+
+.nav-items-display a:hover{
+	color:rgb(255, 255, 255);
+	font-size: larger;
+}
+
+.buton{
+	width: 20%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 129, 190, 1);
+    text-transform: uppercase;
+}
+
+.buton:hover {	
+	background-color: rgba(127, 165, 207, 0.8);
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+
+.kuti-imazhi{
+	width: 100%;
+	height: 800px;
+}
+
+div .mbishkruaj{
+	display: block;
+	margin-left: 8%;
+	width: 75%;
+	height: 50%;
+}
+
+a{
+	text-decoration: none;
+}
+
+.destinacionet-favorite{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.mbishkrim-top-120{
+	margin-top: -120px;
+    z-index: 9;
+    top: 10px;
+}
+
+.permasa-destinacionesh{
+	width: 150px;
+	height: 170px;
+}
+
+.permbajtje-destinacionesh{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.permbajtje-destinacionesh:hover{
+	color: white;
+	font-size: large;
+	transform: scale(1.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.citim{
+	display: inline-flex;
+	width: 100%;
+	height: 50px;
+	align-items: center;
+}
+
+.padding-top-1-5{
+	padding-top: 1.5%;
+}
+
+.border-majtas-blu{
+	border-left: 3px solid rgb(124, 141, 133);
+	padding-left: 2%;
+}
+
+#seksioni-2{
+	display: block;
+}
+
+.permbajtja-seksionit2{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+}
+.pershkrim{
+	width: 45%;
+	margin-inline: 4%;
+}
+
+#karusel-fotosh{
+	display: flex;
+    align-items: center;
+}
+
+.permasat-e-el-karusel{
+	height: 300px;
+}
+
+.bullet{
+	height: 20px;
+	margin-right: 15px;
+	border-radius: 50%;
+}
+
+#seksioni-3{
+	display: block;
+	width: 100%;
+	background-color: rgba(0, 129, 190, 0.6);
+}
+
+.permasa-destinacionesh2{
+	height: 75%;
+	width: 17%;
+	border-radius: 50%;
+}
+
+.pozicionim-ne-rresht{
+	display: inline-flex;
+	width: 100%;
+}
+
+
+.pozicionim-qender-kolone{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pozicionim-qender{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.inline{
+	display: inline-flex;
+}
+
+
+input,
+textarea{
+  padding: .71rem;
+  margin-right: 1.21rem;
+  background-color: whitesmoke;
+  border: solid 1px rgb(151, 151, 151);
+}
+
+textarea {
+  height: 5.2rem;
+}
+
+label {
+  margin-bottom: .71rem;
+  font-weight: bold;
+}
+
+.justify-content-spacebetween{
+	justify-content: space-between;
+}
+
+.justify-content-center{
+	justify-content: center;
+}
+
+#lokacioni:hover{
+	color:rgb(193, 62, 174);
+	font-size: larger;
+}
+
+.mbishkrim{
+	z-index: 3;
+	position: absolute;
+}
+
+.font-citimi{
+	font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #7c8087;
+    overflow-x: hidden;
+    text-transform: uppercase;
+}
+.font-50{
+	font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.font-35{
+	font-size: 35px;
+    font-style: normal;
+    line-height: 1;
+}
+
+.ml-15px{
+	margin-left: 15px;
+}
+
+.p-r-l-10{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.mbishkruaj{
+	position: absolute;
+    bottom: 13%;
+    z-index: 14;
+}
+
+.mbishkruaj-relative{
+	position: relative;
+	bottom: 90px;
+	background-color:rgba(12, 12, 12, 0.75);
+}
+.shkrim-blu{
+	color: rgb(48, 137, 216);
+}
+
+.shkrim-i-bardhe{
+	color: rgb(255, 255, 255);
+}
+
+.shkrim-roze-e-lehte{
+	color:  rgb(240, 229, 229);
+}
+
+.mt-10{
+	margin-top: 10%;
+}
+
+.m-inline{
+		margin-inline: 5%;
+}
+
+.mt-5{
+	margin-top: 5%;
+}
+
+.bg-color-green1{
+	background-color: rgba(124, 141, 133, 0.83); 
+}
+
+.width-100{
+	width: 100%;
+}
+
+.height-300{
+	height: 300px;
+}
+
+.display-content{
+	display: contents;
+}
+
+.mt-45{
+	margin-left: 45%;
+}
+
+.mb-3{
+	margin-bottom: 3%;
+}
+
+.permasa-aktivitetesh{
+	height: 100%;
+	width: 100%;
+}
+.permasa-aktivitetesh-img{
+	width: 400px;
+	height: 450px;
+	margin: 1.5%;
+	padding: 3%;
+}
+
+.width-30{
+	width: 30%;
+}
+
+.shkrim-gri{
+	color: rgb(22, 24, 24);
+}
+
+.permasa{
+	width: 160px;
+	height: 140px;
+}
+
+.column-direction{
+	display: flex;
+	flex-direction: column;
+}
+
+.align-text-center{
+	text-align: center;
+}

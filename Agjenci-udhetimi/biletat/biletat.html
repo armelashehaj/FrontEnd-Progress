@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biletaria</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/avif" href="img/biletaIcon.avif">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3.0.2" defer></script>
+	<script src="app.js" defer></script>
+</head>
+<body>
+  <div>
+    <header>
+      <img class="logo" src="img/biletaIcon.avif" >
+      <h1>Biletaria</h1>
+    </header>
+    <form id="forme" v-on:reset="pastroFushat" v-on:submit.prevent="submitForm">
+      <div class="rreshtat">
+        <div class="forma">
+          <label for="emer">Emer</label>
+          <input type="text" id="emer" v-model.trim="emer"  />
+        </div>
+        <div class="forma">
+          <label for="mbiemer">Mbiemer</label>
+          <input type="text" id="mbiemer" v-model.trim="mbiemer" />
+        </div>
+      </div>
+      <div class="rreshtat">
+        <div class="forma">
+          <label for="email">Email</label>
+          <input type="text" id="email" v-model.trim="email" />
+        </div>
+      </div>
+      <div class="rreshtat">
+        <div class="forma">
+          <label for="sasia">Sasia e biletave</label>
+          <select id="sasia" v-model.number="sasia">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+        <div class="forma">
+          <legend>Lloji</legend>
+          <div>
+            <input type="radio" id="ek" value="ekonomike" v-model="llojiIBiletes">
+            <label for="ek">Ekonomik</label>
+          </div>
+          <div>
+            <input type="radio" id="vip" value="vip" v-model="llojiIBiletes">
+            <label for="vip">VIP</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="rreshtat vertical">
+        <label for="kerkesa">Kerkesa speciale</label>
+        <textarea id="kerkesa" v-model.trim="kerkesaSpeciale" ></textarea>
+      </div>
+      <div class="rreshtat checkbox">
+        <fieldset>
+          <legend>Si u njohet me ne ?</legend>
+          <div>
+            <input type="checkbox" id="miq" value="miq" v-model="referenca">
+            <label for="miq">Miqte</label>
+          </div>
+          <div>
+            <input type="checkbox" id="posterat" value="posterat" v-model="referenca">
+            <label for="posterat">Posterat</label>
+          </div>
+          <div>
+            <input type="checkbox" id="social-media" value="social" v-model="referenca">
+            <label for="social-media">Social Media</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="rreshtat vertical marreveshje checkbox">
+        <fieldset>
+          <legend>Marreveshja</legend>
+          <p>Une,{{ emerIPlote }}, zotohem te blej {{ pershkrimBilete }}.Kuptoj dhe marr persiper faktin qe blerja e biletave eshte nje veprim final.</p>
+          <input type="checkbox" name="marreveshje" id="agree">
+          <label for="agree">Jam dakort!</label>
+        </fieldset>
+      </div>
+      <div class="rreshtat vertical">
+        <label for="signature">Firma</label>
+        <input id="signature" class="signature" v-model="emerIPlote" />
+      </div>
+      <div>
+        <button type="reset" class="reset">Rifillo</button>
+        <button type="submit" v-bind:disabled="!IVlefshem">Konfirmo</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
